@@ -27,7 +27,7 @@ end
 
 # Bonus: C(n) Solution
 function f(X, C)
-    for c in collect(combinations(1:length(X), C))
+    for c in combinations(1:length(X), C)
         y = sum(X[c])
         if y == 2020
             println("Match Found!")
